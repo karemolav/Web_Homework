@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+      <!-- Gather links, forms, and contents-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+              <a href="index.html">Latitude
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temps.html">Max Temperature</a></li>
+              <li><a href="hum.html">Humidity</a></li>
+              <li><a href="cloud.html">Cloudiness</a></li>
+              <li><a href="wind.html">Wind Speed</a></li>
+            </ul>
+        </li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+<!-- For the Overall Grid -->
+ <!--Main Grid-->
+ <div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="main-box">
+                <h1 class="main-pg-header">Cloudiness</h1>
+                <hr>
+                <div class="summary txt">
+                    <img id="result-img" src="Fig3.png", alt="Cloudiness">    
+                    <p> The cloudiness seems to be distibuted fairly evenly
+                        around the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="side-box">
+                <h2 class="main-pg-subheader">Visualizations</h2>
+                <hr>
+                <div class="sidebar">
+                    <a href="temps.html"><img id= "side-img1" src="Fig1.png" alt="Max Temperature"></a>
+                    <a href="hum.html"><img id= "side-img2" src="Fig2.png" alt="Humidity"></a>
+                    <a href="cloud.html"><img id= "side-img3"  src="Fig3.png" alt="Cloudiness"></a>
+                    <a href="wind.html"><img id= "side-img4" src="Fig4.png" alt="Wind Speed" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div class="container-fluid bottom-footer page-footer">
+    <div class="row">
+        <div class="col text-center" <p id="footer-txt">
+            &copy; Copyright Coding Bootcamp 2017
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>
